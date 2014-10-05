@@ -1,9 +1,9 @@
 {
-  "uuid": "7cb67653-827c-4f06-8c6a-73d17e5b181b",
-  "shortName": "RetroTime",
+  "uuid": "2269ca05-657b-4c30-a006-25e4f6a1efc7",
+  "shortName": "RetroTime-Simple",
   "longName": "RetroTime",
-  "companyName": "jonwgeorge",
-  "versionCode": 3,
+  "companyName": "Robb Lewis",
+  "versionCode": 1,
   "versionLabel": "1.0",
   "watchapp": {
     "watchface": true
