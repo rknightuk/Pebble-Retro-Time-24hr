@@ -26,7 +26,7 @@ static void handle_battery(BatteryChargeState charge_state) {
     snprintf(battery_text, sizeof(battery_text), "\uf004 \uf004 \uf004 \uf08a \uf08a");
   } else if (charge_state.charge_percent > 20) {
     snprintf(battery_text, sizeof(battery_text), "\uf004 \uf004 \uf08a \uf08a \uf08a");
-  } else if (charge_state.charge_percent > 0) {
+  } else if (charge_state.charge_percent > 5) {
     snprintf(battery_text, sizeof(battery_text), "\uf004 \uf08a \uf08a \uf08a \uf08a");
   } else {
     snprintf(battery_text, sizeof(battery_text), "\uf08a \uf08a \uf08a \uf08a \uf08a");
