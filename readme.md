@@ -2,4 +2,6 @@
 
 This is a fork of Jonathan George's [RetroTime](https://github.com/jonwgeorge/Retro-Time) for Pebble.
 
-I wanted 24hr rather than am/pm and wanted the battery meters to be 20% instead of 25%.
+![screenshot](screenshot.png)
+
+Updated to 24hr rather than am/pm, each battery heart is 25% not 20% and battery meter has moved to center.
