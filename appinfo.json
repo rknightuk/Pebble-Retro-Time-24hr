@@ -24,18 +24,18 @@
       },
       {
         "type": "font",
-        "name": "FONT_AWESOME_12",
+        "name": "FONT_AWESOME_14",
         "file": "fonts/fontawesome-webfont.ttf"
       },
       {
         "type": "font",
-        "name": "MINECRAFTIA_28",
-        "file": "fonts/minecraftia.ttf"
+        "name": "FONT_GAMEBOY_28",
+        "file": "fonts/Pokemon_GB.ttf"
       },
       {
         "type": "font",
-        "name": "MINECRAFTIA_16",
-        "file": "fonts/minecraftia.ttf"
+        "name": "FONT_GAMEBOY_12",
+        "file": "fonts/Pokemon_GB.ttf"
       }
     ]
   }

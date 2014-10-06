@@ -98,12 +98,12 @@ static void do_init(void) {
 
   Layer *root_layer = window_get_root_layer(window);
   GRect frame = layer_get_frame(root_layer);
-  GFont awesome_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_AWESOME_12));
-  GFont minecraft_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_MINECRAFTIA_28));
-  GFont minecraft_font_small = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_MINECRAFTIA_16));
+  GFont awesome_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_AWESOME_14));
+  GFont minecraft_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_GAMEBOY_28));
+  GFont minecraft_font_small = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_GAMEBOY_12));
 
   // Init the text layer used to show the time
-  time_layer = text_layer_create(GRect(0, 53, frame.size.w /* width */, 34/* height */));
+  time_layer = text_layer_create(GRect(0, 58, frame.size.w /* width */, 34/* height */));
   text_layer_set_text_color(time_layer, GColorWhite);
   text_layer_set_background_color(time_layer, GColorClear);
   text_layer_set_font(time_layer, minecraft_font);
@@ -111,7 +111,7 @@ static void do_init(void) {
   text_layer_set_text(time_layer, " : ");
   
   // Init the text layer used to show the date
-  date_layer = text_layer_create(GRect(0, 91, frame.size.w /* width */, 34/* height */));
+  date_layer = text_layer_create(GRect(0, 96, frame.size.w /* width */, 34/* height */));
   text_layer_set_text_color(date_layer, GColorWhite);
   text_layer_set_background_color(date_layer, GColorClear);
   text_layer_set_font(date_layer, minecraft_font_small);
@@ -127,7 +127,7 @@ static void do_init(void) {
   text_layer_set_text(connection_layer, "\uf09e");
 
   // Init the text layer used to show the battery percentage
-  battery_layer = text_layer_create(GRect(35, 120, /* width */ frame.size.w, 34 /* height */));
+  battery_layer = text_layer_create(GRect(30, 120, /* width */ frame.size.w, 34 /* height */));
   text_layer_set_text_color(battery_layer, GColorWhite);
   text_layer_set_background_color(battery_layer, GColorClear);
   text_layer_set_font(battery_layer, awesome_font);
@@ -135,7 +135,7 @@ static void do_init(void) {
   text_layer_set_text(battery_layer, "\uf004 \uf004 \uf004 \uf004");
   
   // Init the text layer used to show the battery charge state
-  charge_layer = text_layer_create(GRect(35, 120, /* width */ frame.size.w, 34 /* height */));
+  charge_layer = text_layer_create(GRect(30, 120, /* width */ frame.size.w, 34 /* height */));
   text_layer_set_text_color(charge_layer, GColorWhite);
   text_layer_set_background_color(charge_layer, GColorClear);
   text_layer_set_font(charge_layer, awesome_font);
